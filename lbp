@@ -1,3 +1,4 @@
 #!/bin/bash
 
-cat pages/$1
+# from http://tinyurl.com/85qrydz
+cat $( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/pages/$1
