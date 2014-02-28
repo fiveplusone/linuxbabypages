@@ -1,0 +1,19 @@
+#!/bin/bash
+
+curl -O http://linuxbabypages.info/lbp
+chmod +x lbp
+
+mkdir pages
+cd pages
+curl -O http://linuxbabypages.info/pages.tar.gz
+tar xzvf pages.tar.gz
+rm pages.tar.gz
+
+echo "lbp is installed."
+echo "To enable the 'lbp' command, either:"
+echo "  + add the install directory to your path, or"
+echo "  + create an alias in .bash_profile, .bashrc, or similar like:"
+echo ""
+echo "      alias lbp='/install/directory/lbp'"
+echo ""
+echo "Then you can run 'lbp command' to see the baby page for a command."
