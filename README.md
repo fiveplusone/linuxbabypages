@@ -26,11 +26,17 @@ It shares this goal with at least two other projects: [<code>tldr</code>](https:
 
 To suggest changes, make a pull request to the [appropriate repository](https://github.com/fiveplusone/linuxbabypages).
 
+# Web
+
+A copy of the corpus is kept at [linuxbabypages.info](http://linuxbabypages.info).
+
 # Legal
 
 The script (such as it is) is released under the [GNU General Public License, version 3](http://www.gnu.org/licenses/gpl-3.0.html).
 
 The corpus is released under the [GNU Free Documentation License, version 1.3](http://www.gnu.org/copyleft/fdl.html).
+
+The site code is released under the [GNU Affero General Public License, version 3](http://www.gnu.org/licenses/agpl-3.0.txt).
 
 # Maintainers
 
