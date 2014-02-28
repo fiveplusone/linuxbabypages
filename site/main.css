@@ -1,0 +1,11 @@
+body {
+  color: #444;
+  max-width: 650px;
+  padding: 30px;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  color: #111;
+  font-family: Menlo, Monaco, "Courier New", Courier, monospace;
+}
