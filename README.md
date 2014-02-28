@@ -23,15 +23,12 @@ It shares this goal with at least two other projects: [<code>tldr</code>](https:
 # Install
 
 1. In the directory of your choice (e.g., <code>/usr/local/lbp</code>):
-
 ```
 $ curl http://linuxbabypages.info/install | bash
 ```
-
 2. If you did not install to a directory already in your PATH, either:
     * add the install directory to your PATH, or
     * make an alias in your <code>.bashrc</code>, <code>.bash_profile</code> or similar file, e.g.:
-
 ```
 alias lbp='/path/to/install/dir/lbp'
 ```
