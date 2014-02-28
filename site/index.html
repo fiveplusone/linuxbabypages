@@ -12,25 +12,34 @@
 <body>
   <h1>linux baby pages</h1>
 
-  <h2>What</h2>
+  <p>
+    linux baby pages (<code>lbp</code>) is an attempt to make concise &ldquo;common uses&rdquo; <a href="http://en.wikipedia.org/wiki/Man_page">man pages</a>.
+  </p>
 
   <p>
-    linux baby pages (<code>lbp</code>) is an effort to make concise &ldquo;common uses&rdquo; <a href="http://en.wikipedia.org/wiki/Man_page">man pages</a>.
+    It shares this goal with at least two other projects: <code><a href="https://github.com/rprieto/tldr">tldr</a></code> and <code><a href="http://bropages.org">bro</a></code>. <code>lbp</code> is distinguished from these projects by its rules.
   </p>
 
   <h2>Rules</h2>
 
+  <h3>Code</h3>
+
   <ol>
-    <li><code>lbp</code> entries can be no more than <a href="2000.html">2000 characters</a>.</li>
-    <li>The <code>lbp</code> corpus can be no more than 100,000 characters total.</li>
-    <li>Spaces count, but not line breaks.</li>
-    <li><code>lbp</code> entries hard wrap at 72 characters.</li>
+    <li>The <code>lbp</code> command shall be a shell script.</li>
+    <li>The code shall be as simple as possible.</li>
+    <li>The code shall have as few dependencies as possible.</li>
+    <li>Installation shall be as simple as possible.</li>
   </ol>
 
-  <h2>Process</h2>
+  <h3>Text</h3>
 
-  <p>To suggest a change to the script or corpus, make a pull request to the <a href="https://github.com/fiveplusone/linuxbabypages">appropriate repository</a>.</p>
-
+  <ol>
+    <li>Entries shall be no more than <a href="2000.html">2000 characters</a>.</li>
+    <li>The corpus shall total no more than 100,000 characters.</li>
+    <li>Spaces count, but not line breaks.</li>
+    <li>Entries shall hard wrap at 72 characters.</li>
+  </ol>
+  
   <h2>Entries</h2>
 
   <p>
@@ -61,11 +70,33 @@
     <a href="which">which</a>
   </p>
 
-  <h2>Related</h2>
+  <h2>Install</h2>
+
+  <ol>
+    <li>In the directory of your choice (e.g., <code>/usr/local/lbp</code>):
+      <blockquote>
+        <code>$ curl http://linuxbabypages.info/install | bash</code>
+      </blockquote>
+    </li>
+    <li>If you did not install to a directory already in your PATH, either:
+      <ul>
+        <li>add the install directory to your PATH, or</li>
+        <li>make an alias in your <code>.bashrc</code>, <code>.bash_profile</code> or  similar file, e.g.:
+          <blockquote>
+            <code>alias lbp='/path/to/install/dir/lbp'</code>
+          </blockquote>
+        </li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2>Contribute</h2>
 
   <p>
-    There are at least two projects with similar goals that predate <code>lbp</code>: <code><a href="https://github.com/rprieto/tldr">tldr</a></code> and <code><a href="http://bropages.org/">bro</a></code>.
+    <code>lbp</code> code and text is maintained by two co-autocrats.
   </p>
+
+  <p>To suggest a change, make a pull request to the <a href="https://github.com/fiveplusone/linuxbabypages">appropriate repository</a>.</p>
 
   <h2>Legal</h2>
 
@@ -75,6 +106,10 @@
 
   <p>
     The corpus is released under the <a href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License, version 1.3</a>.
+  </p>
+
+  <p>
+    The code for this site is released under the <a href="http://www.gnu.org/licenses/agpl-3.0.txt">GNU Affero General Public License, version 3</a>.
   </p>
 
   <h2>Maintainers</h2>

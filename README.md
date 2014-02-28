@@ -2,7 +2,7 @@
 
 linux baby pages (<code>lbp</code>) is an attempt to make concise "common uses" man pages.
 
-It shares this goal with at least two other projects: [<code>tldr</code>](https://github.com/rprieto/tldr) and [<code>bro</code>](http://bropages.org). <code>lbp</code> is distinguished from similar projects by its rules.
+It shares this goal with at least two other projects: [<code>tldr</code>](https://github.com/rprieto/tldr) and [<code>bro</code>](http://bropages.org). <code>lbp</code> is distinguished from these projects by its rules.
 
 # Rules
 
@@ -20,15 +20,31 @@ It shares this goal with at least two other projects: [<code>tldr</code>](https:
 3. Spaces count, but not line breaks.
 4. Entries shall hard wrap at 72 characters.
 
-# Process
+# Install
 
-<code>lbp</code> code and text is managed by two co-autocrats.
+1. In the directory of your choice (e.g., <code>/usr/local/lbp</code>):
 
-To suggest changes, make a pull request to the [appropriate repository](https://github.com/fiveplusone/linuxbabypages).
+```
+$ curl http://linuxbabypages.info/install | bash
+```
+
+2. If you did not install to a directory already in your PATH, either:
+    * add the install directory to your PATH, or
+    * make an alias in your <code>.bashrc</code>, <code>.bash_profile</code> or similar file, e.g.:
+
+```
+alias lbp='/path/to/install/dir/lbp'
+```
 
 # Web
 
 A copy of the corpus is kept at [linuxbabypages.info](http://linuxbabypages.info).
+
+# Contribute
+
+<code>lbp</code> code and text is managed by two co-autocrats.
+
+To suggest a change, make a pull request to the [appropriate repository](https://github.com/fiveplusone/linuxbabypages).
 
 # Legal
 
