@@ -3,8 +3,6 @@
 curl -O http://linuxbabypages.info/lbp
 chmod +x lbp
 
-mkdir pages
-cd pages
 curl -O http://linuxbabypages.info/pages.tar.gz
 tar xzvf pages.tar.gz
 rm pages.tar.gz
