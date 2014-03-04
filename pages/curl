@@ -1,0 +1,24 @@
+# curl
+
+Get URLs.
+
+## examples
+
+Get a URL:
+
+    curl http://linuxbabypages.info
+
+Save the output of a URL to disk:
+
+    curl -O http://linuxbabypages.info
+    # creates 'index.html' on disk
+
+HTTP authentication:
+
+    curl -u user:password http://linuxbabypages.info
+
+Custom user agent:
+
+    curl -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:27.0)
+      Gecko/20100101 Firefox/27.0" http://linuxbabypages.info
+

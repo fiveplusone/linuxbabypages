@@ -1,0 +1,25 @@
+# du
+
+See how much disk space files and directories use.
+
+## examples
+
+Show disk usage of all directories in this one:
+
+    du
+
+Show files too:
+
+    du -a
+
+"Human-readable format":
+
+    du -h
+
+Just for one file:
+
+    du -h file
+
+Don't count some files:
+
+    du -ha . --exclude='*.log'

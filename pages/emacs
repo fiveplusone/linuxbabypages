@@ -1,0 +1,15 @@
+# emacs
+
+Emacs is a very powerful text editor. It can be used as a programming
+environment, mail and news reader, web browser, document preparation
+environment, etc. It is very extensible.
+
+## Things to put in .emacs
+
+Don't make backup-files~:
+
+    (setq make-backup-files nil)
+
+Show cursor column position:
+
+    (setq column-number-mode t)

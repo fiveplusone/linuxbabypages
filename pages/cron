@@ -1,0 +1,75 @@
+# cron
+
+cron is a 'daemon' (or 'service') that automatically runs jobs at a
+given time. It is controlled by a 'cron table' or 'crontab'.
+
+Cron jobs are listed in the crontab, one per line. Time to run a job is
+specified by a six-part expression of the form:
+
+    m h d M D cmd
+
+where m is the minute, h the hour, d the day of the month, M the month,
+and D the day of the week to run the command (here 'cmd').
+
+Any of the first five parts can be '*', which means 'all'.
+
+The first five parts can be replaced by one of these expressions:
+
+    @yearly
+    @monthly
+    @weekly
+    @daily
+    @hourly
+    @reboot
+
+If a job run by cron produces output, the output is emailed to root.
+You can send it elsewhere by setting MAILTO at the top of the crontab:
+
+    MAILTO=email@foo.net
+
+## examples
+
+### crontab
+
+List cron jobs for current user:
+
+    crontab -l
+
+List cron jobs for user 'jeff':
+
+    crontab -u jeff
+
+Edit cron jobs for current user:
+
+    crontab -e
+
+Change editor:
+
+    EDITOR=emacs crontab -e
+
+### cron jobs
+
+Daily at 12:30 AM:
+
+    30 0 * * * cmd
+
+Every 5 minutes:
+
+    */5 * * * * cmd
+
+Every Sunday at 1:30 PM:
+
+    30 13 * * 0 cmd
+
+### etc
+
+Don't send email:
+
+    @daily cmd >/dev/null 2>&1
+
+## friends
+
+cronic: http://habilis.net/cronic/
+shush: http://web.taranis.org/shush/
+cronwrap (Python): https://pypi.python.org/pypi/cronwrap
+cronwrap (C): http://www.uow.edu.au/~sah/cronwrap.html
