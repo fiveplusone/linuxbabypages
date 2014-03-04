@@ -1,0 +1,9 @@
+# cat
+
+Print concatenated ouput of a file.
+
+## examples
+
+Print partial outpuf of file readme:
+
+	cat readme
