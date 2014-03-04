@@ -1,0 +1,9 @@
+# ps
+
+Display information about current process.
+
+## examples
+
+See every process in full:
+
+	ps -ef

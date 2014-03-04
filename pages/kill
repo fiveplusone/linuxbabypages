@@ -1,0 +1,9 @@
+# kill
+
+Terminate a process.
+
+## examples
+
+Kill process with process id (pid) 123:
+
+	kill -p 123
