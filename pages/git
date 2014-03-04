@@ -1,0 +1,64 @@
+# git
+
+Git is a powerful distributed version control system.
+
+## a common workflow
+
+$ cd project
+$ ls
+file1.py file2.py
+$ git init
+Initialized empty Git repository in project/.git/
+$ vi file1.py
+# make changes
+$ git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	file1.py
+#	file2.py
+$ git add .
+$ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   file1.py
+#	new file:   file2.py
+#
+$ git commit -m 'first commit'
+[master (root-commit) a47bf7a] first commit
+ 0 files changed
+ create mode 100644 file1.py
+ create mode 100644 file2.py
+$ git status
+# On branch master
+nothing to commit (working directory clean)
+# [Create github repository through github interface]
+$ git remote add origin git@github.com:user/project.git
+$ git push -u origin master
+
+## common tasks
+
+Unstage all files:
+
+    git rm -r --cached .
+
+Undo 'git add filename' before a commit:
+
+    git reset HEAD file
+
+Undo last commit:
+
+    git reset --soft HEAD~1
+
+Change commit message for last commit:
+
+    git commit --amend -m 'New commit message'

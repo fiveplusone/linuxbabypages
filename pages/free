@@ -1,0 +1,13 @@
+# free
+
+Show amount of free and used memory and swap.
+
+## examples
+
+Default (numbers in kilobytes):
+
+    free
+
+"Human readable" format (K for kilobytes, M for megabytes, etc.):
+
+    free -h
