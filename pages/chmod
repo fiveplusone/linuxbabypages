@@ -1,0 +1,18 @@
+# chmod
+
+Change permissions for files and directories.
+
+## examples
+
+Make a file group-writeable:
+
+    chmod g+w file
+
+Make a file world-readable and -executable, but only owner- and group-
+writeable:
+
+    chmod 775 file
+
+Recursive:
+
+    chmod -R 775 dir

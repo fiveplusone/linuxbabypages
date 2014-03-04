@@ -1,0 +1,17 @@
+# chown
+
+Change owner of files and directories.
+
+## examples
+
+Change owner of file to user 'kita', with group 'kita':
+
+    chown kita: file
+
+Change owner of file to user 'kita' and group to 'staff':
+
+    chown kita:staff file
+
+Recursive:
+
+    chown -R kita:kita dir

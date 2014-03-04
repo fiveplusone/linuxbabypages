@@ -1,0 +1,13 @@
+# find
+
+Find things.
+
+## examples
+
+Find things named 'foo' in this directory:
+
+    find . -name foo
+
+Find 'apache2.conf' anywhere on this machine:
+
+    find / -name apache2.conf
