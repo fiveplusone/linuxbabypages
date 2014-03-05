@@ -93,3 +93,7 @@ Merge branch 'foo' to master, overwriting files in master:
 
     git checkout master
     git merge -s recursive -X theirs foo
+
+Delete remote branch 'foo' on remote 'origin':
+
+    git push origin :foo
