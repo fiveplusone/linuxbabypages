@@ -1,0 +1,19 @@
+# ls
+
+List contents of the directory.
+
+# examples
+
+List contents:
+	ls
+
+List all contents, including hidden files:
+	ls -a
+
+List contents in full formal:
+
+	ls -l
+
+List contents sorted by size:
+
+	ls -S 

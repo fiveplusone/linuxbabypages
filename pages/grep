@@ -1,0 +1,13 @@
+# grep
+
+Search utility.
+
+# examples
+
+Search for string "hi six" in the file readme.txt:
+
+	grep "hi six" readme.txt
+
+Search for case insensitive string "hi":
+
+	grep -i "hi" readme.txt
