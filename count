@@ -1,0 +1,3 @@
+#!/bin/bash
+
+find pages -maxdepth 1 -type f -exec wc -wc {} \; > site/count
