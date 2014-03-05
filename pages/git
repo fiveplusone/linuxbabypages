@@ -2,6 +2,32 @@
 
 Git is a powerful distributed version control system.
 
+## examples
+
+Clone an existing repository:
+
+	git clone https://github.com/fiveplusone/linuxbabypages
+
+Create a new local repository:
+
+	git init
+
+Pull changes from repository:
+
+	git pull
+
+Add files to next commit:
+
+	git add .
+
+Commit files with a comment:
+
+	git commit -m "comment here"
+
+Push commit to repository:
+
+	git push
+
 ## a common workflow
 
 $ cd project
