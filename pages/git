@@ -22,7 +22,7 @@ Add files to next commit:
 
 Commit files with a comment:
 
-	git commit -m "comment here"
+	git commit -m "comment"
 
 Push commit to repository:
 
@@ -71,7 +71,7 @@ nothing to commit (working directory clean)
 $ git remote add origin git@github.com:user/project.git
 $ git push -u origin master
 
-## common tasks
+## common(?) tasks
 
 Unstage all files:
 
@@ -88,3 +88,12 @@ Undo last commit:
 Change commit message for last commit:
 
     git commit --amend -m 'New commit message'
+
+Merge branch 'foo' to master, overwriting files in master:
+
+    git checkout master
+    git merge -s recursive -X theirs foo
+
+Delete remote branch 'foo' on remote 'origin':
+
+    git push origin :foo
