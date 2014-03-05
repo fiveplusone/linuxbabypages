@@ -4,7 +4,17 @@ Emacs is a very powerful text editor. It can be used as a programming
 environment, mail and news reader, web browser, document preparation
 environment, etc. It is very extensible.
 
-## Things to put in .emacs
+## commands
+
+Undo:
+
+    C-_
+
+Redo:
+
+   C-g C-_
+
+## things to put in .emacs
 
 Don't make backup-files~:
 
