@@ -1,0 +1,17 @@
+# wc
+
+Count words, lines, characters, and bytes in a file.
+
+## examples
+
+Count lines in file:
+
+    wc -l file
+
+Count characters in file:
+
+    wc -m file
+
+Count words in file:
+
+    wc -w file
