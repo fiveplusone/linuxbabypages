@@ -1,0 +1,32 @@
+# .htaccess
+
+.htaccess is the file the Apache web server looks in for directory-specific directives. It is very powerful. It can rewrite and redirect URLs, serve error documents, and do many other things.
+
+## examples
+
+Rewrite 'foo' to 'foo.html':
+
+    RewriteEngine On
+    RewriteRule ^foo$ foo.html
+
+Add '.html' to all letter-only URLs:
+
+    RewriteEngine On
+    RewriteRule ^([a-z]*)$ $1.html
+
+Don't apply subsequent rules if the requested filename is a directory:
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+Don't apply subsequent rules if the requested filename is a file:
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+Pass parameters ("query string"):
+
+    RewriteEngineOn
+    RewriteRule ^([a-z]*)$ $1.php [QSA]
+
+Serve 404 page:
+
+    ErrorDocument 404 404.html
