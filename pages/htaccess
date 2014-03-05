@@ -30,3 +30,8 @@ Pass parameters ("query string"):
 Serve 404 page:
 
     ErrorDocument 404 404.html
+
+## more information
+
+Introduction: http://codular.com/htaccess-introduction
+In depth: http://www.askapache.com/htaccess/htaccess.html
