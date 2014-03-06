@@ -2,18 +2,20 @@
 
 List contents of the directory.
 
-# examples
+## examples
 
 List contents:
-	ls
+
+    ls
 
 List all contents, including hidden files:
-	ls -a
+
+    ls -a
 
 List contents in full formal:
 
-	ls -l
+    ls -l
 
 List contents sorted by size:
 
-	ls -S 
+    ls -S 

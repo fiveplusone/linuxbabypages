@@ -6,4 +6,4 @@ Display information about current process.
 
 See every process in full:
 
-	ps -ef
+    ps -ef

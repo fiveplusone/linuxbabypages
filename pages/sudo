@@ -2,15 +2,22 @@
 
 Run a command as a another user.
 
-# examples
+## examples
 
 Run command as root:
-	sudo cmdname
 
-Run as user "kita":
-	sudo -u kita
+    sudo cmdname
 
-# common tasks
+Become user "kita":
 
-Enable root privileges after you have opened a file in vim:
-	:w !sudo tee %
+    sudo -u kita
+
+Become root:
+
+    sudo su
+
+## common tasks
+
+Enable root privileges to save after changing a read-only file in vim:
+
+    :w !sudo tee %

@@ -1,9 +1,17 @@
 # cat
 
-Print concatenated ouput of a file.
+Concatenate and print files.
 
 ## examples
 
-Print partial outpuf of file readme:
+Print file 'foo':
 
-	cat readme
+    cat foo
+
+Print contents of files 'foo' and 'bar', in that order:
+
+    cat foo bar
+
+Print contents of all txt files in dir and combine into 'dir_all.txt':
+
+    cat dir/*.txt > dir_all.txt

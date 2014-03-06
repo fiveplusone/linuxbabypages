@@ -1,13 +1,28 @@
 # grep
 
-Search utility.
+Search for regular expressions in files.
 
-# examples
+## examples
 
-Search for string "hi six" in the file readme.txt:
+Search for string "hi" in readme.txt:
 
-	grep "hi six" readme.txt
+    grep "hi" readme.txt
 
 Search for case insensitive string "hi":
 
-	grep -i "hi" readme.txt
+    grep -i "hi" readme.txt
+
+Search for word "hi" in all txt files in dir (i.e., don't return "think"):
+
+    grep -w dir/*.txt
+
+Search recursively:
+
+    grep -r hi dir/
+
+Show non-matches:
+
+    grep -v hi *.txt
+
+## more examples
+http://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/

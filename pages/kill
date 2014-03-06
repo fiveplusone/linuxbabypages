@@ -6,4 +6,4 @@ Terminate a process.
 
 Kill process with process id (pid) 123:
 
-	kill -p 123
+    kill -p 123
