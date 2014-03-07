@@ -97,3 +97,10 @@ Merge branch 'foo' to master, overwriting files in master:
 Delete remote branch 'foo' on remote 'origin':
 
     git push origin :foo
+
+'Roll back' to an old commit:
+
+    git checkout [commit hash] .
+
+where [commit hash] is the hash associated with the commit, as shown
+in the output of 'git log'; e.g., '45e5411c...'
