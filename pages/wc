@@ -15,3 +15,7 @@ Count characters in file:
 Count words in file:
 
     wc -w file
+
+Count lines recursively in a directory:
+
+    find . | xargs wc -l
