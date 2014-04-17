@@ -14,7 +14,7 @@ Search for case insensitive string "hi":
 
 Search for word "hi" in all txt files in dir (i.e., don't return "think"):
 
-    grep -w dir/*.txt
+    grep -w hi dir/*.txt
 
 Search recursively:
 
